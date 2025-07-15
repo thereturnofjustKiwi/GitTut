@@ -1,3 +1,4 @@
 # GitTut
 This is kinda my first git repo(officially)
-<br> Author -- Kiwida
+<br> 
+Author -- Kiwida(alias Kevin Borse)
