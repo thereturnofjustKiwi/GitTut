@@ -1,0 +1,21 @@
+name: W2M Windows Cron Workflow
+
+on:
+  schedule:
+    # Runs every day at 02:00 UTC
+    - cron: "0 2 * * *"
+  workflow_dispatch:
+
+jobs:
+  w2m-windows-job:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run PowerShell command
+        shell: pwsh
+        run: |
+          Write-Output "Hello from Windows cron workflow!"
+          Get-Date
